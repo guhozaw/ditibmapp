@@ -36,7 +36,7 @@ var server = http.createServer(function(request, response) {
   response.write("<title>Hello Amit Phulera</title>");
   response.write("</head>");
   response.write("<body>");
-  response.write("<h1>Hello Amit!<br>NP se na ho paega ");
+  response.write("<h1>Hello Amit! </h1><br>App has been started ");
   response.write("</body>");
   response.write("</html>");
   response.end();

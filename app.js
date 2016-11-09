@@ -26,7 +26,7 @@ app.listen(appEnv.port, '0.0.0.0', function() {
   // print a message when the server starts listening
   console.log("server starting on " + appEnv.url);
 });*/
-
+const PORT=appEnv.port;
 var http = require("http");
 var server = http.createServer(function(request, response) {
   response.writeHead(200, {"Content-Type": "text/html"});
@@ -42,5 +42,5 @@ var server = http.createServer(function(request, response) {
   response.end();
 });
 
-server.listen(80);
-console.log("Server is listening");
+server.listen(PORT);
+//console.log("Server is listening");

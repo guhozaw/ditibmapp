@@ -26,7 +26,7 @@ app.listen(appEnv.port, '0.0.0.0', function() {
   // print a message when the server starts listening
   console.log("server starting on " + appEnv.url);
 });*/
-const PORT=process.env.VCAP_APP_PORT;
+var PORT=(process.env.VCAP_APP_PORT || 8080);
 var http = require("http");
 var server = http.createServer(function(request, response) {
   response.writeHead(200, {"Content-Type": "text/html"});
